@@ -7,30 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView android:text="Text to Speech" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textview"
-        android:textSize="35dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Imran"
-        android:id="@+id/textView"
-        android:layout_below="@+id/textview"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ff7aff24"
-        android:textSize="35dp" />
+
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher"
-        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_launcher_background"
+        android:src="@mipmap/ic_launcher"
         android:theme="@style/Base.TextAppearance.AppCompat" />
 
     <EditText
