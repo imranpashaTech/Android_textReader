@@ -56,4 +56,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp" />
 
+    <Button
+        android:id="@+id/demo_btn"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="start_activity"
+        android:layout_marginBottom="62dp"
+        android:text="Demo News Card" />
+
 </RelativeLayout>

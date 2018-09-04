@@ -1,6 +1,7 @@
 package tech.imranpasha.textreader.textreader;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,5 +49,10 @@ public class MainActivity extends Activity {
             t1.shutdown();
         }
         super.onPause();
+    }
+
+    public void start_activity(View view) {
+        Intent intent = new Intent(this, newscard.class);
+        startActivity(intent);
     }
 }

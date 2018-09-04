@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_Container"
+    android:layout_height="match_parent"
+    tools:context=".newscard">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:src="@drawable/ic_launcher_foreground"
+                android:id="@+id/cardImage_IV" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/cardImage_IV"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/card_label_tv"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/card_news_tv"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/card_reporter_tv"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@android:color/darker_gray"
+                android:gravity="center|bottom"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_play"
+                    android:id="@+id/play_IV"
+                    android:onClick="play_news"
+                    android:background="@android:color/white"
+                     />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
