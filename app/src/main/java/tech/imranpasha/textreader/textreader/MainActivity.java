@@ -21,8 +21,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ed1=(EditText)findViewById(R.id.editText);
-        b1=(Button)findViewById(R.id.button);
+        init();
 
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -41,6 +40,11 @@ public class MainActivity extends Activity {
                 t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+    }
+
+    private void init() {
+        ed1=(EditText)findViewById(R.id.editText);
+        b1=(Button)findViewById(R.id.button);
     }
 
     public void onPause(){

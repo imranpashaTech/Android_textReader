@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/rl_Container"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".newscard">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
             <ImageView
+                android:contentDescription="sample"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -24,11 +21,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_below="@+id/cardImage_IV"
                 android:padding="10dp"
                 android:orientation="vertical">
                 <TextView
-
+                    android:text="@string/app_name"
                     android:id="@+id/card_label_tv"
                     android:layout_width="match_parent"
                     android:textStyle="bold"
@@ -36,15 +32,15 @@
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content" />
                 <TextView
-
+                    android:text="@string/app_name"
                     android:id="@+id/card_news_tv"
                     android:textSize="14sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
                 <TextView
-
+                    android:text="@string/app_name"
                     android:id="@+id/card_reporter_tv"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -56,9 +52,9 @@
                 android:padding="10dp"
                 android:orientation="horizontal"
                 android:background="@android:color/darker_gray"
-                android:gravity="center|bottom"
-                android:layout_alignParentBottom="true">
+                android:gravity="center|bottom">
                 <ImageView
+                    android:contentDescription="paly btn"
                     android:layout_width="30dp"
                     android:layout_height="25dp"
                     android:src="@mipmap/ic_play"
@@ -68,7 +64,7 @@
                      />
 
             </LinearLayout>
-        </LinearLayout>
 
 
-</RelativeLayout>
+
+</LinearLayout>
